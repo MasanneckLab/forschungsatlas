@@ -1,0 +1,41 @@
+<section aria-label="Interaktiver Forschungsatlas">
+  <p>Sechs Studien zum Ausprobieren und die Publikationen unserer Arbeitsgruppe: Was zeigen die Daten, und wo liegen ihre Grenzen?</p>
+  <p><a href="https://masannecklab.github.io/forschungsatlas/" target="_blank" rel="noopener noreferrer">Forschungsatlas separat öffnen ↗</a></p>
+  <iframe
+    id="digitale-translation-atlas"
+    title="Forschungsatlas der AG Digitale Translation – interaktive Studien und Publikationen"
+    src="https://masannecklab.github.io/forschungsatlas/?embed=1"
+    width="100%" height="800" loading="lazy"
+    referrerpolicy="strict-origin-when-cross-origin"
+    sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-downloads"
+    style="display:block;width:100%;border:0;background:#f9f8f4;">
+  </iframe>
+</section>
+<script>
+(() => {
+  const frame = document.getElementById('digitale-translation-atlas');
+  const atlasOrigin = 'https://masannecklab.github.io';
+  const url = new URL(frame.src);
+  if (location.origin !== 'null') url.searchParams.set('parentOrigin', location.origin);
+  frame.src = url.href;
+  let contentHeight = 800;
+  const resizeFrame = () => {
+    // Keep long bibliographies and their dialogs inside a usable viewport.
+    const maximumHeight = Math.max(620, Math.min(1000, window.innerHeight - 120));
+    frame.style.height = Math.min(contentHeight, maximumHeight) + 'px';
+  };
+  window.addEventListener('message', event => {
+    if (event.origin !== atlasOrigin || event.source !== frame.contentWindow) return;
+    const message = event.data;
+    if (message?.type !== 'research-atlas:resize' || message.version !== 1) return;
+    if (!Number.isFinite(message.height) || message.height < 200 || message.height > 40000) return;
+    contentHeight = Math.ceil(message.height);
+    resizeFrame();
+  });
+  frame.addEventListener('load', () => {
+    frame.contentWindow.postMessage({type:'research-atlas:request-size'}, atlasOrigin);
+  });
+  window.addEventListener('resize', resizeFrame);
+  resizeFrame();
+})();
+</script>
