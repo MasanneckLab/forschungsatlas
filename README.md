@@ -1,10 +1,12 @@
-# Forschungsatlas · AG Digitale Translation
+# AG Mars · Forschungsatlas der AG Digitale Translation
 
 [Atlas öffnen](https://masannecklab.github.io/forschungsatlas/) · [Website der Arbeitsgruppe](https://www.digitale-translation.de/)
 
 49 publizierte Beiträge aus Digital Health und Neurologie mit Beteiligung von Lars Masanneck, einschließlich Kooperationen und früherer Arbeiten. Die Sammlung ist kein vollständiges Verzeichnis aller Arbeiten sämtlicher AG-Mitglieder. Stand: 27. Oktober 2026.
 
 Sechs Studien lassen sich interaktiv erkunden: Schlaganfallversorgung, Leitlinien-RAG, CIDP-Aktivität, LLM-Triage, Gehfunktion bei MS und Schlafmonitoring bei CIDP. Publizierte Werte und konstruierte Beispiele sind in jeder Ansicht getrennt gekennzeichnet. Quellen und Aussagegrenzen stehen direkt bei den Darstellungen.
+
+Die Gestaltung greift die Blautöne, den hellen Hintergrund und die Arial-Fließtexte der AG-Website auf. Serifenschriften setzen die Überschriften ab; der Atlas verwendet dafür lokal verfügbare Schriften. Die Textmarke „AG Mars“ bleibt auch in der eingebetteten Ansicht sichtbar.
 
 ## Nutzung
 
