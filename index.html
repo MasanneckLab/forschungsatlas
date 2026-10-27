@@ -214,6 +214,8 @@ button.primary:active,.dialog-actions a:first-child:active{background:#003c7d;bo
     {id:'wearables', number:'03', label:'Bewegung im Alltag messen', subtitle:'Wearables · 2025'},
     ...window.AdditionalStudies.items
   ];
+  const requestedStudy = new URLSearchParams(location.search).get('study');
+  if (studies.some(study => study.id === requestedStudy)) state.study = requestedStudy;
   const source = (study, extra='') => `<div class="ex-source"><span class="ex-overline">Die Publikation</span><p>${esc(study.citation)}</p><button type="button" data-landmark-paper="${esc(study.paperId)}">Autoren und Publikationsdetails ↗</button><a href="${esc(study.sourceUrl)}" target="_blank" rel="noopener noreferrer">Originalarbeit öffnen ↗</a>${extra}</div>`;
   function render() {
     return `<div class="exhibition"><header class="ex-intro"><div><p class="ex-overline">Aus der AG Digitale Translation</p><h1>Studien zum Ausprobieren</h1></div><p>Verändern Sie eine Annahme, vergleichen Sie Antworten oder untersuchen Sie ein Messprinzip. Die veröffentlichten Ergebnisse stehen jeweils daneben.</p></header><nav class="ex-index" aria-label="Interaktive Studie auswählen">${studies.map(s=>`<button type="button" data-study="${s.id}" aria-pressed="${state.study===s.id}"><span class="ex-index-number">${s.number}</span><span><strong>${s.label}</strong><small>${s.subtitle}</small></span></button>`).join('')}</nav><label class="ex-mobile-study" for="ex-study-select">Studie auswählen<select id="ex-study-select">${studies.map(s=>`<option value="${s.id}" ${state.study===s.id?'selected':''}>${s.number} · ${s.label}</option>`).join('')}</select></label><div id="exhibit-stage">${studyHtml()}</div><div class="ex-to-archive"><p>${window.RESEARCH_DATA.meta.publicMode ? `Im Verzeichnis finden Sie ${window.RESEARCH_DATA.publications.length} Publikationen aus Digital Health und Neurologie.` : `Die vollständige Sammlung enthält ${window.RESEARCH_DATA.publications.length} Publikationen und ${window.RESEARCH_DATA.projects.length} dokumentierte Projekte.`}</p><button type="button" data-ex-archive>Zum Publikationsverzeichnis →</button></div></div>`;
@@ -230,6 +232,11 @@ button.primary:active,.dialog-actions a:first-child:active{background:#003c7d;bo
   function chooseStudy(id) {
     if(!studies.some(s=>s.id===id)) return;
     state.study=id;
+    try {
+      const url = new URL(location.href);
+      url.searchParams.set('study', id);
+      history.replaceState(history.state, '', url.href);
+    } catch { /* Restricted local previews may not allow URL updates. */ }
     document.getElementById('ex-study-select').value=id;
     document.querySelectorAll('[data-study]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.study===id)));
     document.getElementById('exhibit-stage').innerHTML=studyHtml();
