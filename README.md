@@ -1,4 +1,4 @@
-# AG Mars · Forschungsatlas
+# AG MARS · Forschungsatlas
 
 [Atlas öffnen](https://masannecklab.github.io/forschungsatlas/) · [Website der Arbeitsgruppe](https://www.digitale-translation.de/)
 
