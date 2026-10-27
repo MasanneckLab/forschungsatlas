@@ -2,16 +2,16 @@
 
 [Atlas öffnen](https://masannecklab.github.io/forschungsatlas/) · [Website der Arbeitsgruppe](https://www.digitale-translation.de/)
 
-49 Publikationen aus Digital Health und Neurologie mit Beteiligung von Lars Masanneck, einschließlich Kooperationen und früherer Arbeiten. Die Sammlung ist kein vollständiges Verzeichnis aller AG-Mitglieder. Stand: Oktober 2026.
+162 publizierte Beiträge mit Beteiligung von Lars Masanneck oder Marc Pawlitzki, einschließlich Kooperationen und früherer Arbeiten. Die Sammlung ist kein vollständiges Verzeichnis aller AG-Mitglieder. Stand: Oktober 2026.
 
-Neun Studien lassen sich interaktiv erkunden: Schlaganfallversorgung, Leitlinien-RAG, Aktivitätsmessung bei CIDP, LLM-Triage, Gehfunktion bei MS, Schlafmonitoring bei CIDP, Wearing-off unter Natalizumab, Therapieangaben in der Brisa-App und Web-RAG mit Quellenbeschränkung.
+15 Studien lassen sich interaktiv erkunden: Wearable-Monitoring, klinische KI, App-Daten und räumlicher Versorgungszugang. Bei den Isochronenarbeiten können Sie publizierte Fahrzeitgrenzen, Netzwerke und teilweise Bundesländer vergleichen.
 
-Wir kennzeichnen publizierte Originalwerte und konstruierte Lehrbeispiele getrennt. Quellen, Methoden und Aussagegrenzen finden Sie bei der jeweiligen Studie.
+Publizierte Originalwerte und konstruierte Lehrbeispiele sind getrennt gekennzeichnet. Quellen, Methoden und Aussagegrenzen stehen bei der jeweiligen Studie.
 
 ## Nutzung
 
-Suchen und filtern Sie Publikationen, speichern Sie eine Merkliste oder exportieren Sie Literaturangaben als BibTeX oder JSON. Ihre Merkliste bleibt im verwendeten Browser.
+Suchen und filtern Sie nach Autorenschaft, Forschungsfeld, Jahr oder Beitragstyp. Eine Merkliste und Exporte als BibTeX oder JSON unterstützen die Literaturarbeit. Ihre Merkliste bleibt im verwendeten Browser.
 
-Sie können auch `index.html` herunterladen und ohne Installation im Browser öffnen. Für die verlinkten Originalpublikationen benötigen Sie Internetzugang.
+Die Datei `index.html` funktioniert ohne Installation und offline. Für die verlinkten Originalpublikationen benötigen Sie Internetzugang.
 
 [Impressum](https://www.digitale-translation.de/impressum/) · [Datenschutzerklärung](https://www.digitale-translation.de/datenschutzerklaerung/)
