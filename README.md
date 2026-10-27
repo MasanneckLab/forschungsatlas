@@ -4,7 +4,7 @@
 
 49 Publikationen aus Digital Health und Neurologie mit Beteiligung von Lars Masanneck, einschließlich Kooperationen und früherer Arbeiten. Die Sammlung ist kein vollständiges Verzeichnis aller AG-Mitglieder. Stand: Oktober 2026.
 
-Neun Studien lassen sich interaktiv erkunden: Schlaganfallversorgung, Leitlinien-RAG, Aktivitätsmessung bei CIDP, LLM-Triage, Gehfunktion bei MS Schlafmonitoring bei CIDP, Wearing-off unter Natalizumab, Therapieangaben in der Brisa-App und Web-RAG mit Quellenbeschränkung.
+Neun Studien lassen sich interaktiv erkunden: Schlaganfallversorgung, Leitlinien-RAG, Aktivitätsmessung bei CIDP, LLM-Triage, Gehfunktion bei MS, Schlafmonitoring bei CIDP, Wearing-off unter Natalizumab, Therapieangaben in der Brisa-App und Web-RAG mit Quellenbeschränkung.
 
 Wir kennzeichnen publizierte Originalwerte und konstruierte Lehrbeispiele getrennt. Quellen, Methoden und Aussagegrenzen finden Sie bei der jeweiligen Studie.
 
